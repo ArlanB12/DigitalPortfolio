@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#07050f"/>
+  <title>Arlan Villaruel — Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/av_logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <!-- VIDEO BACKGROUND -->
+  <div class="video-bg-wrap">
+    <video class="video-bg" autoplay muted loop playsinline>
+      <source src="assets/bg.mp4" type="video/mp4"/>
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Ambient orbs (subtle layer on top of video) -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ══ TOP HEADER NAV ══ -->
+  <header class="top-header" id="topHeader">
+    <div class="th-inner">
+      <a class="th-brand" href="#sec-home">
+        <div class="th-logo">
+          <img src="assets/images/av_logo.png" alt="AV Logo"/>
+        </div>
+        <span class="th-name">Arlan <em>Villaruel</em></span>
+      </a>
+
+      <nav class="th-nav" aria-label="Site navigation">
+        <a class="th-link active" href="#sec-home"><i class="fas fa-house"></i><span>Home</span></a>
+        <a class="th-link" href="#sec-about"><i class="fas fa-user"></i><span>About</span></a>
+        <a class="th-link" href="#sec-skills"><i class="fas fa-code"></i><span>Skills</span></a>
+        <a class="th-link" href="#sec-projects"><i class="fas fa-layer-group"></i><span>Projects</span></a>
+        <a class="th-link" href="#sec-contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+      </nav>
+
+      <div class="th-right">
+        <div class="th-social">
+          <a class="th-social-btn" href="https://github.com/ArlanB12" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a class="th-social-btn" href="https://www.linkedin.com/in/arlan-villaruel-27a807405/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="th-social-btn" href="https://www.facebook.com/villaruel.arlan1245" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <button class="th-theme-btn" id="themeToggle" title="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+          <span id="themeLabel">Light</span>
+        </button>
+        <button class="th-hamburger" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="th-mobile-nav" id="mobileNav">
+      <a class="th-mobile-link active" href="#sec-home"><i class="fas fa-house"></i> Home</a>
+      <a class="th-mobile-link" href="#sec-about"><i class="fas fa-user"></i> About</a>
+      <a class="th-mobile-link" href="#sec-skills"><i class="fas fa-code"></i> Skills</a>
+      <a class="th-mobile-link" href="#sec-projects"><i class="fas fa-layer-group"></i> Projects</a>
+      <a class="th-mobile-link" href="#sec-contact"><i class="fas fa-paper-plane"></i> Contact</a>
+    </div>
+  </header>
+
+  <!-- Dot nav (desktop scroll-aware) -->
+  <div class="dot-nav">
+    <a class="dot-nav-item active" href="#sec-home"     data-label="Home"></a>
+    <a class="dot-nav-item"        href="#sec-about"    data-label="About"></a>
+    <a class="dot-nav-item"        href="#sec-skills"   data-label="Skills"></a>
+    <a class="dot-nav-item"        href="#sec-projects" data-label="Projects"></a>
+    <a class="dot-nav-item"        href="#sec-contact"  data-label="Contact"></a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HOME -->
+    <section class="section" id="sec-home">
+      <div class="home-hero-row">
+        <div class="home-hero-left">
+          <h1 class="home-headline">
+            <div class="hl-1">Building</div>
+            <div class="hl-2">Systems</div>
+            <div class="hl-3">With Purpose.</div>
+          </h1>
+          <p class="home-tagline">
+            A driven IT student and <strong>team leader</strong> who bridges the gap between vision and execution.
+            I coordinate teams, manage timelines, and deliver <strong>working systems</strong> —
+            from AI-powered enrollment platforms to full-stack web apps.
+          </p>
+          <div class="home-cta">
+            <a class="btn-primary" href="#sec-projects"><i class="fas fa-layer-group"></i> View Projects</a>
+            <a class="btn-ghost" href="#sec-contact"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+          </div>
+          <div class="tags-row">
+            <span class="tag">HTML5 / CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP / Laravel</span>
+            <span class="tag">React / TypeScript</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">Rover Scout</span>
+          </div>
+        </div>
+        <div class="home-hero-right">
+          <div class="home-avatar-wrap">
+            <img src="assets/images/avatar.jpg" alt="Arlan Villaruel" class="home-avatar"
+              onerror="this.style.display='none';document.getElementById('homeAvatarFallback').style.display='flex'"/>
+            <div class="avatar-fallback" id="homeAvatarFallback" style="display:none"><i class="fas fa-user"></i></div>
+            <div class="home-avatar-glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-num">4<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
+        <div class="stat-item"><div class="stat-num">4<span>+</span></div><div class="stat-label">Years Studying IT</div></div>
+        <div class="stat-item"><div class="stat-num">2<span>+</span></div><div class="stat-label">Capstone Systems</div></div>
+        <div class="stat-item"><div class="stat-num">10<span>+</span></div><div class="stat-label">Certifications & Awards</div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="sec-about">
+      <div class="sec-eyebrow">// about</div>
+      <h2 class="sec-title">Who I <em>Am</em></h2>
+      <div class="sec-divider"></div>
+      <div class="about-grid">
+        <div>
+          <div class="bio-text">
+            <p>I'm <strong>Arlan Bert M. Villaruel</strong>, a BSIT student at STI College Naga with a leadership-first approach to technology. As a project coordinator, I've steered multi-member teams through full development cycles — from planning and delegation through to final delivery.</p>
+            <p>A proud member of the <strong>Rover Scout of the Philippines</strong>, I bring discipline, service, and integrity into every project I take on. My strength lies in bridging the gap between abstract ideas and shipped products — keeping teams aligned and hitting every milestone.</p>
+            <p>Whether I'm coordinating a capstone AI system, architecting inventory management, or designing a portfolio from scratch, I lead with intention and finish with care.</p>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <div class="info-row"><span class="info-label">Full Name</span><span class="info-val">Arlan Bert M. Villaruel</span></div>
+            <div class="info-row"><span class="info-label">Role</span><span class="info-val">Team Leader & Project Coordinator</span></div>
+            <div class="info-row"><span class="info-label">School</span><span class="info-val">STI College Naga</span></div>
+            <div class="info-row"><span class="info-label">Course</span><span class="info-val">BS Information Technology</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-val">Naga City, Bicol, PH</span></div>
+            <div class="info-row"><span class="info-label">Phone</span><span class="info-val">09947839302</span></div>
+            <div class="info-row"><span class="info-label">Email</span><span class="info-val"><a href="mailto:villaruel.arlan1245@gmail.com">villaruel.arlan1245@gmail.com</a></span></div>
+            <div class="info-row"><span class="info-label">Languages</span><span class="info-val">Filipino · English</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-title"><i class="fas fa-heart" style="color:var(--amethyst)"></i> Interests</div>
+      <div class="interests-row">
+        <span class="interest-chip"><i class="fas fa-gamepad"></i> Gaming</span>
+        <span class="interest-chip"><i class="fas fa-microchip"></i> PC Building / Modding</span>
+        <span class="interest-chip"><i class="fas fa-terminal"></i> Coding / Automation</span>
+        <span class="interest-chip"><i class="fas fa-book"></i> Reading</span>
+        <span class="interest-chip"><i class="fas fa-pen"></i> Journaling</span>
+        <span class="interest-chip"><i class="fas fa-film"></i> Watching Movies</span>
+        <span class="interest-chip"><i class="fas fa-plane"></i> Traveling</span>
+        <span class="interest-chip"><i class="fas fa-music"></i> Playing Instruments</span>
+        <span class="interest-chip"><i class="fas fa-leaf"></i> Aquascaping</span>
+        <span class="interest-chip"><i class="fas fa-robot"></i> AI & Machine Learning</span>
+        <span class="interest-chip"><i class="fas fa-camera"></i> Photography</span>
+        <span class="interest-chip"><i class="fas fa-utensils"></i> Trying New Food</span>
+        <span class="interest-chip"><i class="fas fa-chess"></i> Chess</span>
+        <span class="interest-chip"><i class="fas fa-hiking"></i> Hiking / Outdoors</span>
+        <span class="interest-chip"><i class="fas fa-palette"></i> UI / UX Design</span>
+        <span class="interest-chip"><i class="fas fa-campground"></i> Scout Activities</span>
+      </div>
+
+      <div class="sub-title"><i class="fas fa-graduation-cap" style="color:var(--cobalt)"></i> Education</div>
+      <div class="edu-item">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-body">
+          <h4>STI College Naga</h4>
+          <div class="edu-deg">Bachelor of Science in Information Technology</div>
+          <div class="edu-meta">Naga City, Camarines Sur, Philippines</div>
+        </div>
+        <div class="edu-year">2022 – 2026</div>
+      </div>
+
+      <div class="sub-title"><i class="fas fa-users" style="color:var(--mist)"></i> Affiliation</div>
+      <div class="affil-card">
+        <div class="affil-icon"><i class="fas fa-campground"></i></div>
+        <div class="affil-body">
+          <h4>Rover Scout of the Philippines</h4>
+          <p>Active member · Boy Scouts of the Philippines · Region V</p>
+          <p style="margin-top:.25rem;color:var(--text-faint)">Achieved rank of Yellow Quadrant · Leadership Award recipient</p>
+        </div>
+      </div>
+
+      <div class="sub-title"><i class="fas fa-award" style="color:var(--lavender)"></i> Certifications & Achievements</div>
+      <div class="cert-grid">
+        <div class="cert-card" onclick="openCert('oracle')">
+          <img class="cert-thumb" id="cert-thumb-oracle" src="" alt="Oracle Java Fundamentals"/>
+          <div class="cert-info"><div class="cert-title">Java Fundamentals</div><div class="cert-issuer">Oracle Academy</div><div class="cert-date">June 19, 2024</div></div>
+        </div>
+        <div class="cert-card" onclick="openCert('cwts')">
+          <img class="cert-thumb" id="cert-thumb-cwts" src="" alt="NSTP-CWTS"/>
+          <div class="cert-info"><div class="cert-title">NSTP — Civic Welfare Training Service</div><div class="cert-issuer">STI College Naga</div><div class="cert-date">June 27, 2024</div></div>
+        </div>
+        <div class="cert-card" onclick="openCert('honors')">
+          <img class="cert-thumb" id="cert-thumb-honors" src="" alt="President's Honors List"/>
+          <div class="cert-info"><div class="cert-title">President's Honors List</div><div class="cert-issuer">STI College Naga</div><div class="cert-date">AY 2023-2024, 1st Semester</div></div>
+        </div>
+        <div class="cert-card" onclick="openCert('leadership')">
+          <img class="cert-thumb" id="cert-thumb-leadership" src="" alt="Leadership Award"/>
+          <div class="cert-info"><div class="cert-title">Leadership Award — DepEd Region V</div><div class="cert-issuer">V. Bagasina Sr. Memorial High School</div><div class="cert-date">July 14, 2023</div></div>
+        </div>
+        <div class="cert-card" onclick="openAlokCert('best_short_film')">
+          <img class="cert-thumb" id="cert-grid-best-short-film" src="" alt="Best Short Film 1st Runner-up"/>
+          <div class="cert-info"><div class="cert-title">Best Short Film — 1st Runner-up</div><div class="cert-issuer">Digital Dilemmas · STI College Naga</div><div class="cert-date">December 10, 2025</div></div>
+        </div>
+        <div class="cert-card" onclick="openAlokCert('peoples_choice')">
+          <img class="cert-thumb" id="cert-grid-peoples-choice" src="" alt="People's Choice Award 2nd Runner-up"/>
+          <div class="cert-info"><div class="cert-title">People's Choice Award — 2nd Runner-up</div><div class="cert-issuer">Digital Dilemmas · STI College Naga</div><div class="cert-date">December 10, 2025</div></div>
+        </div>
+        <div class="cert-card" onclick="openAlokCert('participation')">
+          <img class="cert-thumb" id="cert-grid-participation" src="" alt="Certificate of Participation"/>
+          <div class="cert-info"><div class="cert-title">Certificate of Participation — Digital Dilemmas</div><div class="cert-issuer">STI College Naga</div><div class="cert-date">November 25, 2025</div></div>
+        </div>
+        <div class="cert-card" onclick="openAlokCert('publication')">
+          <img class="cert-thumb" id="cert-grid-publication" src="" alt="Certificate of Publication — UNIPLAT"/>
+          <div class="cert-info"><div class="cert-title">Certificate of Publication — Alok (Offer)</div><div class="cert-issuer">UNIPLAT Global Platform</div><div class="cert-date">November 25, 2025</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="sec-skills">
+      <div class="sec-eyebrow">// skills</div>
+      <h2 class="sec-title">What I <em>Know</em></h2>
+      <div class="sec-divider"></div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <div class="skill-block-head">
+            <div class="skill-icon" style="background:rgba(124,77,255,.15);color:var(--amethyst)"><i class="fas fa-globe"></i></div>
+            <span class="skill-block-name">Web Development</span>
+          </div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">60%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-v" data-width="60"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">50%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-c" data-width="50"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">PHP / Laravel</span><span class="skill-pct">60%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-v" data-width="60"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">React / TypeScript</span><span class="skill-pct">50%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-m" data-width="50"></div></div></div>
+        </div>
+        <div class="skill-block">
+          <div class="skill-block-head">
+            <div class="skill-icon" style="background:rgba(77,124,255,.15);color:var(--cobalt)"><i class="fas fa-tools"></i></div>
+            <span class="skill-block-name">Tools & Systems</span>
+          </div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">MySQL / PostgreSQL</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-c" data-width="70"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-m" data-width="75"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-v" data-width="80"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name">Python / scikit-learn</span><span class="skill-pct">55%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-c" data-width="55"></div></div></div>
+        </div>
+        <div class="skill-block">
+          <div class="skill-block-head">
+            <div class="skill-icon" style="background:rgba(141,164,255,.1);color:var(--mist)"><i class="fas fa-users"></i></div>
+            <span class="skill-block-name">Leadership & Soft Skills</span>
+          </div>
+          <div class="soft-cloud">
+            <span class="soft-chip">Project Management</span><span class="soft-chip">Team Coordination</span>
+            <span class="soft-chip">Strategic Planning</span><span class="soft-chip">Problem Solving</span>
+            <span class="soft-chip">Communication</span><span class="soft-chip">Agile / Scrum</span>
+            <span class="soft-chip">Documentation</span><span class="soft-chip">Delegation</span>
+            <span class="soft-chip">Deadline Management</span><span class="soft-chip">Mentoring</span>
+            <span class="soft-chip">Decision Making</span><span class="soft-chip">Conflict Resolution</span>
+            <span class="soft-chip">Critical Thinking</span><span class="soft-chip">Adaptability</span>
+            <span class="soft-chip">Accountability</span><span class="soft-chip">Time Management</span>
+            <span class="soft-chip">Creativity</span><span class="soft-chip">Initiative</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="sec-projects">
+      <div class="sec-eyebrow">// projects</div>
+      <h2 class="sec-title">What I've <em>Built</em></h2>
+      <div class="sec-divider"></div>
+      <div class="projects-grid">
+        <div class="proj-card" onclick="openProject('hi5')" role="button" tabindex="0">
+          <div class="proj-img" style="background:linear-gradient(135deg,#0d1b2a,#1a2a4a)">
+            <img id="proj-img-hi5" src="" alt="Hi5 Portal"/>
+            <div class="proj-img-fallback" style="color:#4d7cff"><i class="fas fa-school"></i></div>
+            <span class="proj-badge badge-cap">Capstone</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-number">01 / PROJECT</div>
+            <h3 class="proj-title">Hi5 Portal</h3>
+            <p class="proj-desc">AI-powered enrollment & academic records management system with at-risk student prediction for DSPMNHS.</p>
+            <div class="proj-tech"><span class="tech-chip">React</span><span class="tech-chip">TypeScript</span><span class="tech-chip">Laravel</span><span class="tech-chip">PostgreSQL</span><span class="tech-chip">Python/ML</span></div>
+            <div class="proj-actions"><button class="proj-btn proj-btn-main"><i class="fas fa-expand-alt"></i> View Details</button></div>
+          </div>
+        </div>
+        <div class="proj-card" onclick="openProject('platonian')" role="button" tabindex="0">
+          <div class="proj-img" style="background:linear-gradient(135deg,#0a1a14,#102a1e)">
+            <img id="proj-img-platonian" src="" alt="Platonians IS"/>
+            <div class="proj-img-fallback" style="color:#4ec9b0"><i class="fas fa-boxes"></i></div>
+            <span class="proj-badge badge-school">School Project</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-number">02 / PROJECT</div>
+            <h3 class="proj-title">Platonians School Assets</h3>
+            <p class="proj-desc">Web-based asset & inventory management system with a 4-tier accountability framework for DSPMNHS.</p>
+            <div class="proj-tech"><span class="tech-chip">PHP 8</span><span class="tech-chip">MySQL</span><span class="tech-chip">JavaScript</span><span class="tech-chip">Bootstrap 5</span></div>
+            <div class="proj-actions"><button class="proj-btn proj-btn-main"><i class="fas fa-expand-alt"></i> View Details</button></div>
+          </div>
+        </div>
+        <div class="proj-card" onclick="openProject('portfolio')" role="button" tabindex="0">
+          <div class="proj-img" style="background:linear-gradient(135deg,#0e0c22,#1a1438)">
+            <img id="proj-img-portfolio" src="" alt="Portfolio"/>
+            <div class="proj-img-fallback" style="color:var(--amethyst)"><i class="fas fa-laptop-code"></i></div>
+            <span class="proj-badge badge-web">Web</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-number">03 / PROJECT</div>
+            <h3 class="proj-title">Digital Portfolio</h3>
+            <p class="proj-desc">This portfolio — a refined, dark editorial-style personal brand site with dark/light mode, contact form and project modals.</p>
+            <div class="proj-tech"><span class="tech-chip">HTML5</span><span class="tech-chip">CSS3</span><span class="tech-chip">JavaScript</span><span class="tech-chip">Bootstrap</span><span class="tech-chip">EmailJS</span></div>
+            <div class="proj-actions"><button class="proj-btn proj-btn-main"><i class="fas fa-expand-alt"></i> View Details</button></div>
+          </div>
+        </div>
+        <!-- ALOK Short Film -->
+        <div class="proj-card" onclick="openProject('alok')" role="button" tabindex="0">
+          <div class="proj-img" style="background:linear-gradient(135deg,#1a0a0a,#3a0a0a)">
+            <img id="proj-img-alok" src="" alt="Alok (Offer)" style="object-position:center top;"/>
+            <div class="proj-img-fallback" style="color:#e8534a"><i class="fas fa-film"></i></div>
+            <span class="proj-badge badge-film">Short Film</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-number">04 / PROJECT</div>
+            <h3 class="proj-title">Alok (Offer)</h3>
+            <p class="proj-desc">A short film on professional issues in Information Systems &amp; Technology. Assistant Director &amp; Writer — Comflix Studios.</p>
+            <div class="proj-tech"><span class="tech-chip">Film</span><span class="tech-chip">Digital Dilemmas</span><span class="tech-chip">Professional Issues</span><span class="tech-chip">IS&amp;T</span></div>
+            <div class="proj-actions"><button class="proj-btn proj-btn-main"><i class="fas fa-expand-alt"></i> View Details</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="sec-contact">
+      <div class="sec-eyebrow">// contact</div>
+      <h2 class="sec-title">Let's <em>Connect</em></h2>
+      <div class="sec-divider"></div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-intro">I'm open to collaborations, project opportunities, and conversations about technology. Drop a message — I respond within 24 hours.</div>
+          <div class="contact-links">
+            <a class="contact-link" href="https://mail.google.com/mail/?view=cm&to=villaruel.arlan1245@gmail.com" target="_blank">
+              <div class="cl-icon" style="background:rgba(234,67,53,.12);color:#ea4335"><i class="fab fa-google"></i></div>
+              <div><span class="cl-label">Email — opens Gmail</span><span class="cl-val">villaruel.arlan1245@gmail.com</span></div>
+            </a>
+            <a class="contact-link" href="https://www.facebook.com/villaruel.arlan1245" target="_blank">
+              <div class="cl-icon" style="background:rgba(24,119,242,.12);color:#1877f2"><i class="fab fa-facebook-f"></i></div>
+              <div><span class="cl-label">Facebook</span><span class="cl-val">villaruel.arlan1245</span></div>
+            </a>
+            <a class="contact-link" href="https://github.com/ArlanB12" target="_blank">
+              <div class="cl-icon github-icon"><i class="fab fa-github"></i></div>
+              <div><span class="cl-label">GitHub</span><span class="cl-val">github.com/ArlanB12</span></div>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/arlan-villaruel-27a807405/" target="_blank">
+              <div class="cl-icon" style="background:rgba(10,102,194,.12);color:#0a66c2"><i class="fab fa-linkedin-in"></i></div>
+              <div><span class="cl-label">LinkedIn</span><span class="cl-val">linkedin.com/in/arlan-villaruel-27a807405</span></div>
+            </a>
+            <a class="contact-link" href="tel:+639947839302">
+              <div class="cl-icon" style="background:rgba(77,255,180,.1);color:#4dffb4"><i class="fas fa-phone"></i></div>
+              <div><span class="cl-label">Phone / Viber / SMS</span><span class="cl-val">09947839302</span></div>
+            </a>
+            <div class="contact-link" style="pointer-events:none;cursor:default">
+              <div class="cl-icon" style="background:rgba(124,77,255,.12);color:var(--amethyst)"><i class="fas fa-map-marker-alt"></i></div>
+              <div><span class="cl-label">Location</span><span class="cl-val">Naga City, Bicol, Philippines</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="cf-wrapper">
+          <div style="font-family:var(--ff-mono);font-size:.7rem;color:var(--text-faint);margin-bottom:1.2rem">/* Messages sent directly to inbox via EmailJS */</div>
+          <form id="contactForm" novalidate>
+            <div class="cf-row">
+              <div class="cf-group"><label class="cf-label">Name *</label><input class="cf-input" id="cf-name" type="text" placeholder="Juan dela Cruz" required/></div>
+              <div class="cf-group"><label class="cf-label">Email *</label><input class="cf-input" id="cf-email" type="email" placeholder="you@email.com" required/></div>
+            </div>
+            <div class="cf-group"><label class="cf-label">Subject</label><input class="cf-input" id="cf-subject" type="text" placeholder="Project collaboration..."/></div>
+            <div class="cf-group"><label class="cf-label">Message *</label><textarea class="cf-textarea" id="cf-message" placeholder="Tell me about your idea..." required></textarea></div>
+            <button type="submit" class="btn-send" id="sendBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <div class="form-ok" id="formOk"><i class="fas fa-check-circle"></i> Message sent! I'll reply soon.</div>
+            <div class="form-err" id="formErr"><i class="fas fa-times-circle"></i> Send failed. Try emailing directly.</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>© 2025 Arlan Bert M. Villaruel</span>
+        <span style="color:var(--amethyst)">Naga City, Bicol, PH</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CERT LIGHTBOX -->
+  <div class="cert-lightbox" id="certLightbox" onclick="closeCert()">
+    <div class="cert-close" onclick="closeCert()"><i class="fas fa-times"></i></div>
+    <img id="certLightboxImg" src="" alt="Certificate"/>
+  </div>
+
+  <!-- PROJECT MODALS -->
+  <div class="modal fade" id="modal-hi5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="modal-status s-wip"><i class="fas fa-hammer"></i> In Development</span><h5 class="modal-title">Hi5 Portal</h5><div class="modal-sub">project_01 · Capstone · STI College Naga</div></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-screenshot" id="modal-img-hi5" src="" alt="Hi5 Portal Screenshot"/>
+          <div class="modal-sec">About This Project</div>
+          <p class="modal-desc">Hi5 Portal is a full-stack capstone project for DSPMNHS. An integrated enrollment and academic records management system with an AI-powered at-risk student prediction module using Python and scikit-learn.</p>
+          <div class="modal-sec">Tech Stack</div>
+          <div class="modal-tech"><span class="modal-tech-tag">React 18</span><span class="modal-tech-tag">TypeScript</span><span class="modal-tech-tag">Vite 6</span><span class="modal-tech-tag">Tailwind CSS 4</span><span class="modal-tech-tag">Radix UI</span><span class="modal-tech-tag">Recharts</span><span class="modal-tech-tag">Laravel</span><span class="modal-tech-tag">PostgreSQL</span><span class="modal-tech-tag">Python</span><span class="modal-tech-tag">scikit-learn</span></div>
+          <div class="modal-sec">Key Features</div>
+          <ul class="modal-features">
+            <li>AI-powered at-risk student prediction using machine learning</li>
+            <li>Auto-sectioning with gender and classification awareness</li>
+            <li>Grade upload and SF9-compliant academic records management</li>
+            <li>Role-based access: Admin, Registrar, Teacher, Student</li>
+            <li>Account lockout after failed login attempts</li>
+            <li>Dark mode, unified registrar theme, toast notifications</li>
+          </ul>
+          <div class="modal-sec">Team</div>
+          <p class="modal-desc">Arlan Villaruel · Micaella A. Nodado · Jerecho R. Ojas<br/><span style="color:var(--text-faint)">A Capstone Project of STI College Naga</span></p>
+        </div>
+        <div class="modal-footer">
+          <span style="font-family:var(--ff-mono);font-size:.7rem;color:var(--text-faint)">Repo & demo links after defense</span>
+          <button type="button" class="modal-action-btn mab-outline" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-platonian" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="modal-status s-wip"><i class="fas fa-hammer"></i> In Development</span><h5 class="modal-title">Platonians School Assets</h5><div class="modal-sub">project_02 · School Project · STI College Naga</div></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-screenshot" id="modal-img-platonian" src="" alt="Platonian IS Screenshot"/>
+          <div class="modal-sec">About This Project</div>
+          <p class="modal-desc">A web-based asset and inventory management system for DSPMNHS with a four-tier accountability framework tracking who receives, holds, and returns assets.</p>
+          <div class="modal-sec">Tech Stack</div>
+          <div class="modal-tech"><span class="modal-tech-tag">PHP 8</span><span class="modal-tech-tag">MySQL</span><span class="modal-tech-tag">Vanilla JavaScript</span><span class="modal-tech-tag">Bootstrap 5</span><span class="modal-tech-tag">XAMPP</span></div>
+          <div class="modal-sec">Key Features</div>
+          <ul class="modal-features">
+            <li>4-tier accountability system for full asset traceability</li>
+            <li>13-type notification system for item events</li>
+            <li>24-hour automated backup with configurable retention</li>
+            <li>DepEd-compliant bulk asset ID label printing</li>
+          </ul>
+          <div class="modal-sec">Team</div>
+          <p class="modal-desc">Arlan Villaruel · Micaella A. Nodado · Jerecho R. Ojas</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/ArlanB12/PlatoniansSchoolAssets" class="modal-action-btn mab-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <button type="button" class="modal-action-btn mab-outline" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-portfolio" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="modal-status s-live"><i class="fas fa-circle" style="font-size:.5em"></i> Live</span><h5 class="modal-title">Digital Portfolio</h5><div class="modal-sub">project_03 · Personal · Web</div></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-screenshot" id="modal-img-portfolio" src="" alt="Portfolio Screenshot"/>
+          <div class="modal-sec">About This Project</div>
+          <p class="modal-desc">A dark/light editorial-style personal brand site with a top header nav, video background, smooth scroll navigation, and project detail modals.</p>
+          <div class="modal-sec">Tech Stack</div>
+          <div class="modal-tech"><span class="modal-tech-tag">HTML5</span><span class="modal-tech-tag">CSS3</span><span class="modal-tech-tag">JavaScript</span><span class="modal-tech-tag">Bootstrap 5</span><span class="modal-tech-tag">EmailJS</span></div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://arlanvillaruel.vercel.app/#sec-home" class="modal-action-btn mab-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live Site</a>
+          <a href="https://github.com/ArlanB12/DigitalPortfolio" class="modal-action-btn mab-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <button type="button" class="modal-action-btn mab-outline" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALOK MODAL -->
+  <div class="modal fade" id="modal-alok" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="modal-status s-live" style="background:rgba(232,83,74,.15);color:#e8534a;border-color:rgba(232,83,74,.3)"><i class="fas fa-circle" style="font-size:.5em"></i> Released</span><h5 class="modal-title">Alok (Offer)</h5><div class="modal-sub">project_04 · Short Film · Comflix Studios</div></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-screenshot" id="modal-img-alok" src="" alt="Alok Poster" style="object-fit:contain; object-position:center; max-height:500px; width:100%; background:var(--surface2);"/>
+          <div class="modal-sec">About This Project</div>
+          <p class="modal-desc"><strong>Alok (Offer)</strong> is a short film on professional issues in Information Systems and Technology, directed by <strong>Jheamuel Panuelos</strong> and produced by <strong>Comflix Studios</strong>. The film follows an employee who is introduced to an online gambling site. What begins as casual enjoyment gradually turns into addiction and distraction, ultimately compromising mental health, work performance, and personal priorities. Alok highlights the dangers of unchecked digital temptations and the professional issues that arise when technology intersects with human vulnerability.</p>
+          <div class="modal-sec">My Role</div>
+          <p class="modal-desc"><strong>Assistant Director &amp; Writer</strong></p>
+          <div class="modal-sec">Awards &amp; Recognition</div>
+          <div class="alok-certs-grid" id="alokCertsGrid">
+            <div class="alok-cert-item" onclick="openAlokCert('best_short_film')">
+              <img id="alok-cert-best-short-film" src="" alt="Best Short Film 1st Runner-up"/>
+              <div class="alok-cert-label">🏆 Best Short Film — 1st Runner-up</div>
+            </div>
+            <div class="alok-cert-item" onclick="openAlokCert('peoples_choice')">
+              <img id="alok-cert-peoples-choice" src="" alt="People's Choice Award 2nd Runner-up"/>
+              <div class="alok-cert-label">🎭 People's Choice — 2nd Runner-up</div>
+            </div>
+            <div class="alok-cert-item" onclick="openAlokCert('participation')">
+              <img id="alok-cert-participation" src="" alt="Certificate of Participation"/>
+              <div class="alok-cert-label">📜 Certificate of Participation</div>
+            </div>
+            <div class="alok-cert-item" onclick="openAlokCert('publication')">
+              <img id="alok-cert-publication" src="" alt="Certificate of Publication — UNIPLAT"/>
+              <div class="alok-cert-label">🌐 Certificate of Publication — UNIPLAT</div>
+            </div>
+          </div>
+          <div class="modal-sec">Film Details</div>
+          <div class="modal-tech">
+            <span class="modal-tech-tag">Short Film</span>
+            <span class="modal-tech-tag">Digital Dilemmas</span>
+            <span class="modal-tech-tag">Professional Issues</span>
+            <span class="modal-tech-tag">Information System</span>
+            <span class="modal-tech-tag">STI College Naga</span>
+          </div>
+          <div class="modal-sec">Team — Comflix Studios</div>
+          <p class="modal-desc">Directed by: <strong>Jheamuel Panuelos</strong><br/>Arlan Bert Villaruel · John Anniluv Atag · Francis Camay · Ralp Andrei Navales · Julius James Brocales · Joyce Vallestero · Mark Anthony Vergara · Reighmond Vhong Velasco</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://www.uniplat.social/video/877" class="modal-action-btn mab-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Watch on UNIPLAT</a>
+          <button type="button" class="modal-action-btn mab-outline" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALOK CERT LIGHTBOX -->
+  <div class="cert-lightbox" id="alokCertLightbox" onclick="closeAlokCert()">
+    <div class="cert-close" onclick="closeAlokCert()"><i class="fas fa-times"></i></div>
+    <img id="alokCertLightboxImg" src="" alt="Certificate"/>
+  </div>
+
+  <div class="notif" id="notif"></div>
+
+  <script src="assets/js/proj_imgs.js"></script>
+  <script src="assets/js/alok_certs.js"></script>
+  <script src="assets/js/certs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
